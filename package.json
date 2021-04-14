@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "ts-node": "ts-node --compiler-options '{\"module\": \"CommonJS\"}'"
+    "ts-node": "ts-node --compiler-options '{\"module\": \"CommonJS\"}'",
+    "vercel-build":"prisma migrate deploy && next build"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.5.0",
